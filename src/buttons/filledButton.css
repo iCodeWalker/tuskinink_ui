@@ -1,0 +1,17 @@
+.button-filled {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2cd9ff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 2px solid #2cd9ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-filled:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
