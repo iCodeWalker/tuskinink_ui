@@ -1,0 +1,20 @@
+.new__loader {
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: perspective(100px) rotateX(0deg);
+    }
+
+    50% {
+        transform: perspective(100px) rotateX(180deg);
+    }
+
+    100% {
+        transform: perspective(100px) rotateZ(180deg);
+    }
+}
