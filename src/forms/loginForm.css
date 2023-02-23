@@ -1,0 +1,13 @@
+.form {
+    position: relative;
+    width: 33rem;
+    height: auto;
+    padding: 2rem;
+    background: #1f1f1f;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 10%;
+}
