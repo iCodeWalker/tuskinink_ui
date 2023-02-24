@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 
-import "./rectInputField.css";
+import "./styledInputField.css";
 
-const RectangleInputField = ({
+const StyledInputField = ({
   value,
   onChange,
   errorMessage,
   label,
   icon,
   placeholder,
+  inputFieldType = "rect",
   type,
 }) => {
   const [errorClass, setErrorClass] = useState("");
@@ -43,7 +44,7 @@ const RectangleInputField = ({
       <div className="input-container">
         <input
           id="email-input"
-          className={`input-field ${errorClass} input-field-rect`}
+          className={`input-field ${errorClass} input-field-${inputFieldType}`}
           value={value}
           onChange={onChange}
           type={isPasswordVisible ? "text" : type}
@@ -78,4 +79,4 @@ const RectangleInputField = ({
   );
 };
 
-export default RectangleInputField;
+export default StyledInputField;

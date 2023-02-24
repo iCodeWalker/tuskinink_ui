@@ -57,7 +57,7 @@ const StandardInputField = ({
         <input
           ref={inputRef}
           id="email-input-s"
-          className={`input-field-s ${errorClass} input-field-rect-s`}
+          className={`input-field-s ${errorClass}`}
           value={value}
           onChange={onChange}
           type={isPasswordVisible ? "text" : type}

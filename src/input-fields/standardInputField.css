@@ -56,6 +56,16 @@
   .input-container-s .input-field-circle-s {
     border-radius: 3rem;
   }
+
+  .input-container-s .input-field-rect-s {
+    border-radius: 0rem;
+    border: 0.15rem solid rgb(68, 68, 68);
+  }
+  
+  .input-container-s .input-field-round-c {
+    border-radius: 3rem;
+    border: 0.15rem solid rgb(68, 68, 68);
+  }
   
   .input-container-s label {
     position: absolute;
