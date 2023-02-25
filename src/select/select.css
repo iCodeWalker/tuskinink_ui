@@ -1,0 +1,81 @@
+
+
+.wrapper {
+  min-width: 200px;
+  width: 200px;
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #b1aeae;
+  background-color: #1b1a1ab0;
+}
+
+.button {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.button-icon-selector {
+    text-align: left;
+}
+
+.wrapper:hover {
+  background-color: #eeeeee;
+}
+
+.wrapper:hover .button {
+    color:rgb(25, 25, 25);
+    font-weight: 600;
+}
+
+i {
+    color: white;
+    font-weight: 600;
+}
+.wrapper:hover i {
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+}
+
+.content {
+  margin-top: 15px;
+  width: 100%;
+  visibility: visible;
+  position: absolute;
+  left:-2px;
+  border: 2px solid #b1aeae;
+  border-radius: 5px;
+  max-height: 100px;
+  overflow: overlay;
+  text-align: center;
+  color: white;
+  
+}
+
+.content-icon-selector {
+    text-align: left;
+}
+
+.content > * {
+  border-bottom: solid #dddddd 2px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.content > *:hover {
+    background-color: #eeeeee;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+}
+
+.content :last-child {
+  border-bottom: none;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
