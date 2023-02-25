@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ButtonSection from "./buttons/buttonSection";
 import LoaderSection from "./loaders/loaderSection";
@@ -7,7 +7,18 @@ import FormSection from "./forms/formSection";
 import "./App.css";
 import Select from "./select/select";
 import Modal from "./models/modal";
+
+import CardSection from "./cards/cardSection";
+
 function App() {
+  const [selectValue, setSelectValue] = useState("");
+
+  const handleSelectValue = (val) => {
+    setSelectValue(val);
+  };
+
+  console.log("I'm from App.js", selectValue);
+
   return (
     <div style={{ margin: 20 }}>
       <ButtonSection />
@@ -19,11 +30,28 @@ function App() {
       <div style={{ width: "90vw" }}>
         <FormSection />
       </div>
-      <div style={{ height: "100px", marginBottom: 50 }}>
-        <Select />
+      <div
+        style={{
+          margin: "10px",
+          height: "400px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#1f1f1f",
+        }}
+      >
+        <Select
+          selectables={["Indore", "pune", "bhopal", "surat", "delhi", "bombay"]}
+          iconSelector={false}
+          handleSelectValue={handleSelectValue}
+        />
       </div>
-      <div style={{ margin: "10px" }}>
+      <div style={{ margin: "10px", padding: "20px" }}>
         <Modal />
+      </div>
+
+      <div style={{ margin: "10px", padding: "20px" }}>
+        <CardSection />
       </div>
     </div>
   );
