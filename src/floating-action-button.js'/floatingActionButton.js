@@ -4,22 +4,40 @@ import { FaPlus } from "react-icons/fa";
 import "./floatingActionButton.css";
 
 const FloatingActionButton = ({
-  icon = <FaPlus />,
+  icon = <FaPlus size={18} />,
+  textContent,
   bgColor = "#3b71ca",
   iconColor = "#fff",
   onClick,
+  size = "55px",
 }) => {
-  return (
+  return textContent ? (
     <div
       onClick={onClick}
+      className="icon-text-fab"
       style={{
         backgroundColor: `${bgColor}`,
-        height: "55px",
-        width: "55px",
-        borderRadius: "50%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        color: `${iconColor}`,
+      }}
+    >
+      <span>{icon}</span>
+      <span
+        style={{
+          fontSize: "15px",
+          marginLeft: "10px",
+        }}
+      >
+        {textContent}
+      </span>
+    </div>
+  ) : (
+    <div
+      onClick={onClick}
+      className="icon-fab"
+      style={{
+        backgroundColor: `${bgColor}`,
+        height: `${size}`,
+        width: `${size}`,
         color: `${iconColor}`,
       }}
     >

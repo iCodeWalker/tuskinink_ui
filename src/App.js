@@ -11,6 +11,7 @@ import Modal from "./models/modal";
 
 import CardSection from "./cards/cardSection";
 import FloatingActionButton from "./floating-action-button.js'/floatingActionButton";
+import FabSection from "./floating-action-button.js'/fabSection";
 
 function App() {
   const [selectValue, setSelectValue] = useState("");
@@ -57,7 +58,7 @@ function App() {
       </div>
 
       <div style={{ margin: "10px", padding: "20px" }}>
-        <FloatingActionButton icon={<FaUser />} />
+        <FabSection />
       </div>
     </div>
   );
