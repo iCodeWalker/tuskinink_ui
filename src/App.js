@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaUser } from "react-icons/fa";
 
 import ButtonSection from "./buttons/buttonSection";
 import LoaderSection from "./loaders/loaderSection";
@@ -9,6 +10,7 @@ import Select from "./select/select";
 import Modal from "./models/modal";
 
 import CardSection from "./cards/cardSection";
+import FloatingActionButton from "./floating-action-button.js'/floatingActionButton";
 
 function App() {
   const [selectValue, setSelectValue] = useState("");
@@ -52,6 +54,10 @@ function App() {
 
       <div style={{ margin: "10px", padding: "20px" }}>
         <CardSection />
+      </div>
+
+      <div style={{ margin: "10px", padding: "20px" }}>
+        <FloatingActionButton icon={<FaUser />} />
       </div>
     </div>
   );
