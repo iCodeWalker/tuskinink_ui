@@ -5,6 +5,8 @@ import FilledButton from "./filledButton";
 import "./buttonSection.scss";
 import OverlapButton from "./overlapButton";
 import GradientOutlineButton from "./gradientOutlineButton";
+import RoundButton from "./roundButton";
+import RoundFilledButton from "./roundFilledButton";
 
 const ButtonSection = () => {
   return (
@@ -16,14 +18,25 @@ const ButtonSection = () => {
           <p>Outline Button</p>
         </div>
 
-        <div className="btn-section__container--item">
+        {/* <div className="btn-section__container--item">
           <OutlineGlowButton title="Submit" />
           <p>Outline Glow Button</p>
-        </div>
+        </div> */}
         <div className="btn-section__container--item">
           <FilledButton title="Submit" />
           <p>Filled Button</p>
         </div>
+
+        <div className="btn-section__container--item">
+          <RoundButton title="Submit" />
+          <p>Round Outline Button</p>
+        </div>
+
+        <div className="btn-section__container--item">
+          <RoundFilledButton title="Submit" />
+          <p>Round Filled Button</p>
+        </div>
+
         <div className="btn-section__container--item">
           <OverlapButton title="Submit" />
           <p>Overlap Button</p>

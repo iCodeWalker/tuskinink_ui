@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-import "./outlineGlowButton.css";
+import "./outlineGlowButton.scss";
 
 const OutlineGlowButton = ({
   title,
@@ -33,7 +33,7 @@ const OutlineGlowButton = ({
     animation: ${pulse} 10s infinite;
   `;
 
-  return <Button className="button-glow">{title}</Button>;
+  return <Button className="button-glow-outline">{title}</Button>;
 };
 
 export default OutlineGlowButton;

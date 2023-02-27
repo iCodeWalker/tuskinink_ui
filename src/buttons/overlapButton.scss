@@ -3,14 +3,14 @@
 .button-overlap {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 10rem;
-  text-decoration: none;
-  text-transform: uppercase;
+  border-radius: 2rem;
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
   z-index: 5;
   @include font-medium-light;
+  color: rgb(37, 36, 36);
+
 
   &:active {
     transform: scale(0.98);
