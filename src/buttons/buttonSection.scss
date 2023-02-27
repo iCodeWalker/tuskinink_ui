@@ -1,0 +1,25 @@
+@import "../styles/main.scss";
+
+.btn-section {
+  h2 {
+    @include font-large-light;
+  }
+
+  .btn-section__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+
+      p {
+        @include font-medium-light;
+      }
+    }
+  }
+}

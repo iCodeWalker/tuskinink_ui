@@ -1,5 +1,5 @@
 import React from "react";
-import "./filledButton.css";
+import "./filledButton.scss";
 
 const FilledButton = ({
   title,

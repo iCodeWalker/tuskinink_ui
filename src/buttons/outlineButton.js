@@ -1,5 +1,5 @@
 import React from "react";
-import "./outlineButton.css";
+import "./outlineButton.scss";
 
 const OutlineButton = ({
   title,

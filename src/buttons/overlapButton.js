@@ -1,5 +1,5 @@
 import React from "react";
-import "./overlapButton.css";
+import "./overlapButton.scss";
 
 const OverlapButton = ({
   title,
