@@ -57,7 +57,20 @@ const CardSection = () => {
           />
         </div>
         <div style={{ margin: "50px" }}>
-          <SimpleCard />
+          <SimpleCard
+            imageSrc="https://images.unsplash.com/photo-1547219469-75c19c0bd220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+            imgOverlayText="Overlay text"
+            links={[
+              {
+                linktitle: "Link",
+                onClick: () => console.log("link one cliked"),
+              },
+              {
+                linktitle: "Another link",
+                onClick: () => console.log("link two clicked"),
+              },
+            ]}
+          />
         </div>
       </div>
     </div>

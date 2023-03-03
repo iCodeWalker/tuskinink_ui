@@ -45,7 +45,7 @@ function App() {
       >
         <Select
           selectables={["Indore", "pune", "bhopal", "surat", "delhi", "bombay"]}
-          iconSelector={false}
+          iconSelector={true}
           handleSelectValue={handleSelectValue}
         />
       </div>
