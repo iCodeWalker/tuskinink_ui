@@ -12,6 +12,7 @@ import Modal from "./models/modal";
 import CardSection from "./cards/cardSection";
 import FloatingActionButton from "./floating-action-button.js'/floatingActionButton";
 import FabSection from "./floating-action-button.js'/fabSection";
+import Accordion from "./accordion/accordion";
 
 function App() {
   const [selectValue, setSelectValue] = useState("");
@@ -59,6 +60,11 @@ function App() {
 
       <div style={{ margin: "10px", padding: "20px" }}>
         <FabSection />
+      </div>
+
+      <div style={{ margin: "10px", padding: "20px" }}>
+        <Accordion />
+        <Accordion />
       </div>
     </div>
   );

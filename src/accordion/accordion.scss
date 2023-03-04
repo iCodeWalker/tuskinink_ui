@@ -1,0 +1,42 @@
+.accordion__container {
+  height: 200px;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--section {
+    width: 50rem;
+    height: 5rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: #1f1f1f;
+    color: whitesmoke;
+
+    &:hover .accordion__container--hidden-section {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  &--hidden-section {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0;
+    transform: translateY(-60px);
+    padding: 1rem 1.6rem;
+    transition: all 0.2s;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &--title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.6rem;
+  }
+}
