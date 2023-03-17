@@ -13,6 +13,7 @@ import CardSection from "./cards/cardSection";
 import FloatingActionButton from "./floating-action-button.js'/floatingActionButton";
 import FabSection from "./floating-action-button.js'/fabSection";
 import Accordion from "./accordion/accordion";
+import AlertSection from "./alerts/alertSection";
 
 function App() {
   const [selectValue, setSelectValue] = useState("");
@@ -65,6 +66,10 @@ function App() {
       <div style={{ margin: "10px", padding: "20px" }}>
         <Accordion />
         <Accordion />
+      </div>
+
+      <div style={{ margin: "10px", padding: "20px" }}>
+        <AlertSection />
       </div>
     </div>
   );

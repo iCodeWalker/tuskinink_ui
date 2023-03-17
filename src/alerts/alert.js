@@ -1,18 +1,20 @@
 import React from "react";
-import { IoAlertCircleOutline } from "react-icons/io";
+import { FiAlertCircle } from "react-icons/fi";
 
 import "./alert.scss";
 
 const Alert = () => {
   return (
-    <div className="alert__container">
+    <span className="alert__container">
       <div className="alert__section">
         <div className="alert__section--icon">
-          <IoAlertCircleOutline />
+          <FiAlertCircle size={18} />
         </div>
-        <p className="alert__section--message">Alert</p>
+        <p className="alert__section--message">
+          This message is regarding some error
+        </p>
       </div>
-    </div>
+    </span>
   );
 };
 
